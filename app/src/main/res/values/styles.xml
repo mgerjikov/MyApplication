@@ -1,0 +1,375 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <!-- Custom style for all but one TextView in activity_main.xml -->
+    <style name="TextView_activity_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/zeroDp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/layout_margin_16_dp</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/lettersbackground</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+    </style>
+    <!-- Custom style for the first Linear Layout in activity_main.xml -->
+    <style name="LinearLayout1_activity_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_75_dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_margin">@dimen/layout_margin_16_dp</item>
+        <item name="android:background">@color/lettersbackground</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Custom style for two ImageViews in the first Linear Layout in activity_main.xml -->
+    <style name="ImageViews_in_LinearLayout1_activity_main">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/layout_margin_4_dp</item>
+    </style>
+    <!-- Custom style for the TextView in the first Linear Layout in activity_main.xml -->
+    <style name="TextView_in_LinearLayout1_activity_main">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/song</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for the second Linear Layout in activity_main.xml -->
+    <style name="LinearLayout2_activity_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_475_dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <!-- Custom style for the third and fourth Linear Layout in activity_main.xml -->
+    <style name="LinearLayout3_activity_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Custom style for all of the Relative Layout's -->
+    <style name="RelativeLayout_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/background2</item>
+    </style>
+    <!-- Custom style for all of the Icons Images Linear Layout's -->
+    <style name="LinearLayout_IconsImages">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menuIconsHeight</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Custom style for all of the Icons Texts Linear Layout's -->
+    <style name="LinearLayout_IconsText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_below">@id/linear_layout_0</item>
+    </style>
+    <!-- Custom style for all of the Icons Texts Linear Layout's -->
+    <style name="LinearLayout_MusicPlayer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_75_dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/lettersbackground</item>
+    </style>
+    <!-- Custom style for all of the Skip/Previous icons on Media Player -->
+    <style name="PreviousOnPlayer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menuIconsHeight</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_skip_previous_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Play/Pause icons on Media Player -->
+    <style name="PlayPauseOnPlayer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menuIconsHeight</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_play_arrow_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Skip/Next icons on Media Player -->
+    <style name="NextOnPlayer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menuIconsHeight</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_skip_next_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Home icons -->
+    <style name="HomeIconImage">
+        <item name="android:contentDescription">@string/home_button_text</item>
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_home_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Playing Now icons -->
+    <style name="PlayingNowIconImage">
+        <item name="android:contentDescription">@string/now_playing_button_text</item>
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_now_playing_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Add Playlist icons -->
+    <style name="AddPlaylistIconImage">
+        <item name="android:contentDescription">@string/add_new_playlist_button_text</item>
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_playlist_add_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Playlists icons -->
+    <style name="AddedPlaylistIconImage">
+        <item name="android:contentDescription">@string/playlist_button_text</item>
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_recent_music_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Mood icons -->
+    <style name="MoodIconImage">
+        <item name="android:contentDescription">@string/mood_button_text</item>
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_album_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Radio icons -->
+    <style name="RadioIconImage">
+        <item name="android:contentDescription">@string/radio_button_text</item>
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_radio_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Search icons -->
+    <style name="SearchIconImage">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/ic_browse_black_24dp</item>
+    </style>
+    <!-- Custom style for all of the Home TextView's -->
+    <style name="HomeIconText">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/home_button_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for all of the Playing Now TextView's -->
+    <style name="PlayingNowIconText">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/now_playing_button_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for all of the Add New Playlist TextView's -->
+    <style name="AddPlaylistIconText">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/add_new_playlist_button_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for all of the Playlist TextView's -->
+    <style name="AddedPlaylistIconText">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/playlist_button_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for all of the Mood TextView's -->
+    <style name="MoodIconText">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/mood_button_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for all of the Radio TextView's -->
+    <style name="RadioIconText">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/radio_button_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for all of the Search TextView's -->
+    <style name="SearchIconText">
+        <item name="android:layout_width">@dimen/zeroDp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/browse_button_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Custom style for the Linear Layout's (Vertical) that represent
+    the center of the screen. There are 3 of them: in activity_add_playlist.xml ,
+     activity_added_playlist.xml and activity_mood.xml-->
+    <style name="LinearLayout_Vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_288_dp</item>
+        <item name="android:layout_below">@id/linear_layout_1</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_16_dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Custom style for the Linear Layout's (Vertical) that represent
+    the center of the screen in activity_search.xml -->
+    <style name="LinearLayout_Vertical_search">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_75_dp</item>
+        <item name="android:layout_below">@id/linear_layout_1</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_16_dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Custom style for all of the Linear Layout's (Horizontal) that represent
+    the center of the screen. Only 1 in activity_radio.xml -->
+    <style name="LinearLayout_Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_288_dp</item>
+        <item name="android:layout_below">@id/linear_layout_1</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_16_dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Custom style for images placed in activity_radio.xml -->
+    <style name="RadioImages">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/layout_margin_12_dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- Custom style for the EditText placed in activity_search.xml -->
+    <style name="EditTextActivitySearch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menuIconsHeight</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_16_dp</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_16_dp</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_4_dp</item>
+        <item name="android:background">@color/lettersbackground</item>
+        <item name="android:hint">e.g. Frank Ocean</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <!-- Custom style for the TextView placed in activity_add_playlist.xml -->
+    <style name="TextViewInActivityAddPlaylist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menuIconsHeight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/new_playlist_text</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/lettersbackground</item>
+        <item name="android:layout_margin">@dimen/layout_margin_16_dp</item>
+    </style>
+    <!-- Custom style for the Relative Layout's placed in activity_added_playlist.xml -->
+    <style name="RelativeLayout_AddedPlaylist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/menuIconsHeight</item>
+        <item name="android:layout_margin">@dimen/layout_margin_16_dp</item>
+        <item name="android:background">@color/lettersbackground</item>
+    </style>
+    <!-- Custom style for the two play arrow attached to the sample playlists
+     in activity_added_playlist.xml -->
+    <style name="ImagePlaylist_AddedPlaylist">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/ic_play_arrow_black_24dp</item>
+        <item name="android:layout_margin">@dimen/layout_margin_8_dp</item>
+    </style>
+    <!-- Custom style for the two TextView's representing the names of the sample playlists
+     in activity_added_playlist.xml -->
+    <style name="TextPlaylist_AddedPlaylist">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/layout_margin_8_dp</item>
+    </style>
+    <!-- Custom Linear Layout style used in activity_now_playing.xml -->
+    <style name="LinearLayout_activity_now_playing">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_75_dp</item>
+        <item name="android:layout_below">@id/linear_layout_1</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_16_dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Custom Linear Layout style used in activity_now_playing.xml -->
+    <style name="LinearLayout2_activity_now_playing">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- Custom TextView's used for Artist/Group name and Song name in activity_now_playing.xml -->
+    <style name="TextView_activity_now_playing">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/letters</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/layout_margin_4_dp</item>
+    </style>
+    <!-- Custom ImageView used for Artist/Group cover/poster in activity_now_playing.xml -->
+    <style name="ImageView_activity_now_playing">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/buena</item>
+        <item name="android:layout_margin">@dimen/layout_margin_4_dp</item>
+    </style>
+    <!-- Custom ImageView that represent Icon or Cover/Poster in activity_now_playing.xml -->
+    <style name="ImageView_Note_activity_now_playing">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_height_288_dp</item>
+        <item name="android:layout_below">@id/linear_layout_2</item>
+        <item name="android:src">@drawable/ic_audiotrack_black_72dp</item>
+    </style>
+    <!-- Custom style for Description TextView's -->
+    <style name="DescriptionTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/layout_margin_16_dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_1">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_0"
+        style="@style/LinearLayout_IconsImages">
+
+        <ImageView
+            android:id="@+id/activity_radio_home_image_id"
+            style="@style/HomeIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_radio_playing_now_image_id"
+            style="@style/PlayingNowIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_radio_search_image_id"
+            style="@style/SearchIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_radio_add_new_image_id"
+            style="@style/AddPlaylistIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_radio_playlist_image_id"
+            style="@style/AddedPlaylistIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_radio_mood_image_id"
+            style="@style/MoodIconImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        style="@style/LinearLayout_IconsText">
+
+        <TextView
+            android:id="@+id/activity_radio_home_id"
+            style="@style/HomeIconText" />
+
+        <TextView
+            android:id="@+id/activity_radio_playing_now_id"
+            style="@style/PlayingNowIconText" />
+
+        <TextView
+            android:id="@+id/activity_radio_search_id"
+            style="@style/SearchIconText" />
+
+        <TextView
+            android:id="@+id/activity_radio_add_new_id"
+            style="@style/AddPlaylistIconText" />
+
+        <TextView
+            android:id="@+id/activity_radio_playlist_id"
+            style="@style/AddedPlaylistIconText" />
+
+        <TextView
+            android:id="@+id/activity_radio_mood_id"
+            style="@style/MoodIconText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_radio"
+        style="@style/LinearLayout_Horizontal">
+
+        <ImageView
+            style="@style/RadioImages"
+            android:src="@drawable/rbma" />
+
+        <ImageView
+            style="@style/RadioImages"
+            android:src="@drawable/jazzradio" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/linear_layout_radio"
+        style="@style/DescriptionTextView"
+        android:text="@string/description_radio"/>
+
+
+
+
+    <LinearLayout style="@style/LinearLayout_MusicPlayer">
+
+        <ImageView style="@style/PreviousOnPlayer" />
+
+        <ImageView style="@style/PlayPauseOnPlayer" />
+
+        <ImageView style="@style/NextOnPlayer" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

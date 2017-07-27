@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/RelativeLayout_1"
+    tools:context="com.example.android.musicalapp.MainActivity">
+
+    <LinearLayout style="@style/LinearLayout1_activity_main">
+
+        <ImageView
+            style="@style/ImageViews_in_LinearLayout1_activity_main"
+            android:src="@drawable/buena" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/TextView_in_LinearLayout1_activity_main" />
+
+        <ImageView
+            style="@style/ImageViews_in_LinearLayout1_activity_main"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayout2_activity_main">
+
+        <LinearLayout style="@style/LinearLayout3_activity_main">
+
+            <TextView
+                android:id="@+id/nowPlaying_id"
+                style="@style/TextView_activity_main"
+                android:text="Now Playing" />
+
+            <TextView
+                android:id="@+id/playList_id"
+                style="@style/TextView_activity_main"
+                android:text="Playlists" />
+
+            <TextView
+                android:id="@+id/radio_id"
+                style="@style/TextView_activity_main"
+                android:text="Radio" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout3_activity_main">
+
+            <TextView
+                android:id="@+id/search_id"
+                style="@style/TextView_activity_main"
+                android:text="Browse" />
+
+            <TextView
+                android:id="@+id/mood_id"
+                style="@style/TextView_activity_main"
+                android:text="Mood" />
+
+            <TextView
+                android:id="@+id/addNew_id"
+                style="@style/TextView_activity_main"
+                android:text="+Add" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

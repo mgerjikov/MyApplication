@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_1">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_0"
+        style="@style/LinearLayout_IconsImages">
+
+        <ImageView
+            android:id="@+id/activity_add_home_image_id"
+            style="@style/HomeIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_add_playing_now_image_id"
+            style="@style/PlayingNowIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_add_search_image_id"
+            style="@style/SearchIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_add_Playlist_image_id"
+            style="@style/AddedPlaylistIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_add_mood_image_id"
+            style="@style/MoodIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_add_radio_image_id"
+            style="@style/RadioIconImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        style="@style/LinearLayout_IconsText">
+
+        <TextView
+            android:id="@+id/activity_add_home_id"
+            style="@style/HomeIconText" />
+
+        <TextView
+            android:id="@+id/activity_add_playing_now_id"
+            style="@style/PlayingNowIconText" />
+
+        <TextView
+            android:id="@+id/activity_add_search_id"
+            style="@style/SearchIconText" />
+
+        <TextView
+            android:id="@+id/activity_add_playlist_id"
+            style="@style/AddedPlaylistIconText" />
+
+        <TextView
+            android:id="@+id/activity_add_mood_id"
+            style="@style/MoodIconText" />
+
+        <TextView
+            android:id="@+id/activity_add_radio_id"
+            style="@style/RadioIconText" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/LinearLayout_Vertical">
+
+        <TextView style="@style/TextViewInActivityAddPlaylist" />
+
+        <TextView
+            style="@style/DescriptionTextView"
+            android:text="@string/description_add_playlist"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout style="@style/LinearLayout_MusicPlayer">
+
+        <ImageView style="@style/PreviousOnPlayer" />
+
+        <ImageView style="@style/PlayPauseOnPlayer" />
+
+        <ImageView style="@style/NextOnPlayer" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

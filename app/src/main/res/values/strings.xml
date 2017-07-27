@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MusicalApp</string>
+    <string name="song">Buena Vista Social Club - Chan Chan</string>
+    <string name="song_artist">Buena Vista Social Club</string>
+    <string name="song_name">Chan Chan</string>
+    <string name="home_button_text">Home</string>
+    <string name="now_playing_button_text">Now</string>
+    <string name="add_new_playlist_button_text">Add</string>
+    <string name="playlist_button_text">Playlists</string>
+    <string name="mood_button_text">Mood</string>
+    <string name="radio_button_text">Radio</string>
+    <string name="browse_button_text">Browse</string>
+    <string name="new_playlist_text">+ New Playlist</string>
+    <string name="playlist_favorites">Favorites</string>
+    <string name="playlist_all_my_music">All my music</string>
+    <string name="mood_cant_sleep">Can not sleep?</string>
+    <string name="mood_party">Party</string>
+    <string name="mood_romance">Romance</string>
+    <string name="mood_workout">Workout</string>
+    <string name="description_mood">This screen will show curated playlists for different moods or situations.Media player at the bottom implemented through MediaPlayer class.  </string>
+    <string name="description_now_playing">This is Now Playing screen. It will show the name of the artist and song that is played. If there is a cover image or poster it will show that one too. If not it will show this big note insted, or equalizer. Media player at the bottom implemented through MediaPlayer class.</string>
+    <string name="description_radio">This screen will show different radio stations that the user can listen trough Shoutcast API. Media player at the bottom implemented through MediaPlayer class. </string>
+    <string name="description_search">This screen will be used to search for music. It will use SearchView widget that is configured so that the Android system handles all input events, deliver queries to the appropriate activity, and provide search suggestions. If the data is stored in the device I will use SQLiteDatabase class to search for it. If the data is store online - APIs. Media player at the bottom implemented through MediaPlayer class.</string>
+    <string name="description_add_playlist">This screen will allow users to create and store new playlists.Media player at the bottom implemented through MediaPlayer class. </string>
+    <string name="description_playlists">This screen will show all the saved playlists, like Favorites, All my music etc.Media player at the bottom implemented through MediaPlayer class. </string>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelativeLayout_1">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_0"
+        style="@style/LinearLayout_IconsImages">
+
+        <ImageView
+            android:id="@+id/activity_added_playlist_home_image_id"
+            style="@style/HomeIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_added_playlist_playing_now_image_id"
+            style="@style/PlayingNowIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_added_playlist_search_image_id"
+            style="@style/SearchIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_added_playlist_add_new_image_id"
+            style="@style/AddPlaylistIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_added_playlist_mood_image_id"
+            style="@style/MoodIconImage" />
+
+        <ImageView
+            android:id="@+id/activity_added_playlist_radio_image_id"
+            style="@style/RadioIconImage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        style="@style/LinearLayout_IconsText">
+
+        <TextView
+            android:id="@+id/activity_added_playlist_home_id"
+            style="@style/HomeIconText" />
+
+        <TextView
+            android:id="@+id/activity_added_playlist_playing_now_id"
+            style="@style/PlayingNowIconText" />
+
+        <TextView
+            android:id="@+id/activity_added_playlist_search_id"
+            style="@style/SearchIconText" />
+
+        <TextView
+            android:id="@+id/activity_added_playlist_add_new_id"
+            style="@style/AddPlaylistIconText" />
+
+        <TextView
+            android:id="@+id/activity_added_playlist_mood_id"
+            style="@style/MoodIconText" />
+
+        <TextView
+            android:id="@+id/activity_added_playlist_radio_id"
+            style="@style/RadioIconText" />
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/LinearLayout_Vertical">
+
+        <RelativeLayout style="@style/RelativeLayout_AddedPlaylist">
+
+            <TextView
+                style="@style/TextPlaylist_AddedPlaylist"
+                android:text="@string/playlist_favorites" />
+
+            <ImageView style="@style/ImagePlaylist_AddedPlaylist" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/RelativeLayout_AddedPlaylist">
+
+            <TextView
+                style="@style/TextPlaylist_AddedPlaylist"
+                android:text="@string/playlist_all_my_music" />
+
+            <ImageView style="@style/ImagePlaylist_AddedPlaylist" />
+        </RelativeLayout>
+        <TextView
+            style="@style/DescriptionTextView"
+            android:text="@string/description_playlists"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/LinearLayout_MusicPlayer">
+
+        <ImageView style="@style/PreviousOnPlayer" />
+
+        <ImageView style="@style/PlayPauseOnPlayer" />
+
+        <ImageView style="@style/NextOnPlayer" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
